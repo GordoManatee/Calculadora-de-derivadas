@@ -12,20 +12,44 @@ Regla de la cadena: 𝑑/𝑑𝑥(𝑓(𝑔(𝑥)))=𝑓′(𝑔(𝑥))⋅𝑔�
 Una calculadora de derivadas es una herramienta diseñada para calcular la derivada de funciones matemáticas de forma rápida y precisa. Estas calculadoras suelen estar disponibles en línea o como aplicaciones y permiten a los usuarios ingresar una función, que puede incluir polinomios, funciones trigonométricas, exponenciales, logarítmicas, y más. Una vez ingresada la función, la calculadora procesa la información y aplica las reglas de derivación para proporcionar la derivada correspondiente. Algunas de estas calculadoras también ofrecen funcionalidades adicionales, como la posibilidad de calcular derivadas parciales, derivadas sucesivas, o incluso mostrar el proceso paso a paso de cómo se llega al resultado. Además, algunas versiones avanzadas permiten graficar la función original junto con su derivada, lo que facilita la visualización del comportamiento de la función en diferentes puntos. Estas herramientas son particularmente útiles en contextos educativos, donde los estudiantes pueden verificar sus respuestas y comprender mejor los conceptos de cálculo diferencial, así como en entornos profesionales donde se requiere rapidez y precisión en los cálculos matemáticos.
 
 ## Algoritmo
-### Entrada: 
-La función que se desea derivar (en formato algebraico), especificando los coeficientes y exponentes de cada término.
+### Entrada:
 
-### Proceso: 
-Pedir al usuario que ingrese la función que desea derivar.
-Identificar cada término de la función ingresada, separando los coeficientes y exponentes correspondientes.
-Aplicar la regla de derivación adecuada para cada término:
-Si el término es una constante, su derivada será 0.
-Si el término es de la forma 𝑎𝑥^𝑛, calcular la derivada utilizando la regla de la potencia
-Si la función incluye multiplicaciones o divisiones, aplicar la regla del producto o del cociente según corresponda.
-Si la función es una raíz, convertirla a su forma exponencial y aplicar la regla de la potencia.
-Si la función es compuesta, aplicar la regla de la cadena.
-Sumar todas las derivadas de los términos individuales para obtener la derivada total de la función original.
-Formatear el resultado de manera que sea fácil de leer, ajustando signos y simplificando la expresión final si es necesario.
+1. **Menú de Selección**: 
+   - El programa presenta al usuario un menú con tres opciones:
+     - 1: Derivada de un polinomio.
+     - 2: Derivada de un producto.
+     - 3: Derivada de un cociente.
+   
+2. **Elección del Usuario**:
+   - El usuario selecciona el tipo de derivada que desea calcular ingresando el número correspondiente (1, 2 o 3).
 
-### Salida: 
-La derivada de la función ingresada, presentada en formato algebraico simplificado.
+3. **Ingreso de Funciones**:
+   - Según la selección del usuario, el programa solicitará las siguientes entradas:
+     - Si elige **1** (Polinomio): el usuario ingresa una función polinómica (por ejemplo: x^2 + 3x - 2).
+     - Si elige **2** (Producto): el usuario ingresa dos funciones que están siendo multiplicadas (por ejemplo: 3x y 8x^3).
+     - Si elige **3** (Cociente): el usuario ingresa el numerador y el denominador de la fracción (por ejemplo: x^3 + 1 y x^2 - 1).
+
+### Proceso:
+
+1. **Procesar la Derivada**:
+   - Según la opción elegida por el usuario:
+     - **Polinomio**: Se separan los términos de la función polinómica. Luego, cada término es derivado individualmente, y los resultados son combinados para formar la derivada final.
+     - **Producto**: Se derivan ambas funciones por separado y se aplica la **regla del producto**: 
+       𝑑/𝑑𝑥(𝑢𝑣)=𝑢′𝑣+𝑢𝑣′  
+     - **Cociente**: Se derivan el numerador y el denominador y se aplica la **regla del cociente**: 
+       𝑑/𝑑𝑥(𝑢/𝑣)=(𝑢′𝑣−𝑢𝑣′)/𝑣^2
+   
+2. **Mostrar el Resultado**:
+   - El resultado de la derivada es mostrado en formato simplificado. El programa realiza las operaciones algebraicas necesarias para devolver la derivada de forma correcta.
+
+3. **Ciclo de Continuación**:
+   - El programa pregunta al usuario si desea realizar otro cálculo (**s** para continuar, **n** para salir). Si el usuario decide continuar, el programa regresa al menú inicial. De lo contrario, el programa finaliza.
+
+### Salida:
+
+- Dependiendo de la selección del usuario, las salidas pueden ser:
+  - La derivada de un polinomio.
+  - La derivada de un producto de dos funciones.
+  - La derivada de un cociente de dos funciones.
+  
+- Después de calcular, se muestra el resultado en formato simplificado.
