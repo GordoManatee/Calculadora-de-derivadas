@@ -23,11 +23,11 @@ Este programa calcula derivadas de funciones polinómicas, productos y cocientes
 2. El programa analiza la función ingresada para detectar automáticamente si es un polinomio, un producto o un cociente. No es necesario que el usuario especifique el tipo de función.
 
 3. Según el tipo de función detectado:
-   - Si la función es un polinomio, el programa separa cada término, deriva individualmente cada uno, y guarda el procedimiento paso a paso en un archivo llamado **procedimiento_derivada.txt**.
-   - Si la función es un producto, el programa aplica la **regla del producto**: 
+   - Si la función es un polinomio **( 8x^2 - 3x )**, el programa separa cada término, deriva individualmente cada uno, y guarda el procedimiento paso a paso en un archivo llamado **procedimiento_derivada.txt**.
+   - Si la función es un producto **( 3x * 8x^2 )**, el programa aplica la **regla del producto**: 
      𝑑/𝑑𝑥(𝑢𝑣)=𝑢′𝑣+𝑢𝑣′
      Deriva las dos funciones involucradas y guarda los pasos en el archivo de procedimiento.
-   - Si la función es un cociente, el programa aplica la **regla del cociente**:
+   - Si la función es un cociente **( ( 3x+1 )/( 8x^2 - 3x ) )**, el programa aplica la **regla del cociente**:
      𝑑/𝑑𝑥(𝑢/𝑣)=(𝑢′𝑣−𝑢𝑣′)/𝑣^2
      Deriva el numerador y el denominador, y guarda el procedimiento en el archivo.
 
