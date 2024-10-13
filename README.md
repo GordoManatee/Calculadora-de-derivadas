@@ -1,6 +1,10 @@
 # Calculadora de derivadas
 Hacer una calculadora de derivadas en Python sin utilizar bibliotecas matemáticas externas es el objetivo. Crear una herramienta que permita calcular derivadas de funciones matemáticas básicas mediante la aplicación de lógica y programación. La calculadora estará diseñada para manejar las reglas de derivación fundamentales, como la derivada de una constante, la derivada de una potencia, la regla del producto, la regla del cociente, la derivada de una raíz de cualquier índice y la regla de la cadena. Este proyecto es importante porque, además de reforzar el entendimiento de los conceptos básicos del cálculo diferencial, fomenta el desarrollo de habilidades de programación. Al evitar el uso de bibliotecas preexistentes, se obliga a una comprensión más profunda y a una aplicación directa de las matemáticas dentro del código. Esto no solo es un excelente ejercicio para mostrar los conocimientos adquiridos, y también permite que se use como base para futuras modificaciones del proyecto, como el manejo de funciones más complejas o la resolución de ecuaciones diferenciales.
 
+Este proyecto consiste en el desarrollo de una calculadora de derivadas en Python que puede derivar funciones polinómicas, productos y cocientes de manera automática. El enfoque principal de este proyecto es ofrecer una herramienta que no solo entregue el resultado simplificado de una derivada, sino que además permita guardar y mostrar el procedimiento paso a paso que llevó a dicho resultado.
+
+El procedimiento de derivación se almacena en un archivo de texto, lo que ofrece al usuario la opción de revisar cómo se aplicaron las reglas de derivación (como la regla del producto y la regla del cociente) en cada parte de la función. Esto es útil tanto para fines educativos como para comprender cómo se llega a la solución final de la derivada.
+
 ## Formulas basicas:
 Derivada de una constante: 𝑑/𝑑𝑥(𝑐)=0   
 Derivada de una potencia: 𝑑/𝑑𝑥(𝑥^𝑛)=𝑛𝑥^(𝑛−1)  
