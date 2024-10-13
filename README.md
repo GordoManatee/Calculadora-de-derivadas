@@ -52,5 +52,5 @@ El programa detecta automáticamente el tipo de función (polinomio, producto o 
 ### Salida
 
 - Derivada simplificada de la función ingresada.
-- Procedimiento guardado en el archivo `procedimiento_derivada.txt` que puede ser mostrado al usuario si lo solicita.
+- Procedimiento guardado en el archivo **procedimiento_derivada.txt** que puede ser mostrado al usuario si lo solicita.
 
